@@ -99,6 +99,22 @@ public class Bird : Pet
     }
 }
 
+public class Dog : Pet, IAnimal
+{
+    public void MakeSound()
+    {
+        Console.WriteLine($"{Name} says: Woof!");
+    }
+}
+
+public class Bird : Pet, IAnimal
+{
+    public void MakeSound()
+    {
+        Console.WriteLine($"{Name} says: Tweet!");
+    }
+}
+
 
 class Program
 {
